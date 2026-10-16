@@ -63,11 +63,16 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .logo svg{width:36px;height:36px;flex:none}
 .logo b{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem;letter-spacing:.06em;text-transform:uppercase;line-height:1}
 .logo small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.24em;color:var(--night-muted);text-transform:uppercase;margin-top:5px}
-.navlinks{display:flex;gap:30px;font-size:.88rem;letter-spacing:.03em}
+.navlinks{display:flex;gap:22px;font-size:.86rem;letter-spacing:.02em;white-space:nowrap}
 .navlinks a{text-decoration:none;color:var(--night-muted);transition:color .2s}
 .navlinks a:hover{color:var(--night-ink)}
-nav .btn{padding:12px 20px;font-size:.84rem}
-@media (max-width:900px){.navlinks{display:none}}
+nav .btn{padding:12px 20px;font-size:.84rem;white-space:nowrap}
+.navright{display:flex;align-items:center;gap:18px}
+.navrent{display:none;white-space:nowrap;text-decoration:none;color:var(--night-ink);font-size:.86rem;letter-spacing:.03em;border-bottom:1px solid var(--gold);padding-bottom:2px}
+@media (max-width:1100px){.navlinks a[href="#featured"]{display:none}}
+@media (max-width:900px){.navlinks{display:none}.navrent{display:inline-block}}
+@media (max-width:440px){.navright{gap:12px}.btn .long{display:none}}
+.btn .short{display:none}@media (max-width:440px){.btn .short{display:inline}}
 @media (max-width:440px){.logo small{display:none}nav .btn{padding:11px 13px;font-size:.78rem}}
 
 .hero{background:var(--night);color:var(--night-ink);padding-block:88px 104px;position:relative;overflow:hidden}
@@ -284,7 +289,7 @@ footer.site .fine{font-size:.78rem;max-width:64em;line-height:1.65;opacity:.85}
     <div class="navlinks">
       <a href="#practice">Practice</a><a href="#featured">Featured project</a><a href="#engage">Engagements</a><a href="#work">Selected work</a><a href="#story">About</a><a href="#faq">FAQ</a><a href="rentals.html">Car rentals</a>
     </div>
-    <a class="btn" href="#contact">Request a consultation</a>
+    <div class="navright"><a class="navrent" href="rentals.html">Rentals</a><a class="btn" href="#contact"><span class="long">Request a consultation</span><span class="short">Consult</span></a></div>
   </div>
 </nav>
 
