@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="XNova Rentals: daily and weekly car rentals in Clinton, MA. Call or text (726) 215-3491. A division of XNova LLC, from the team behind Konbit Group.">
+<meta property="og:title" content="XNova Rentals | Car rentals in Clinton, MA">
+<meta property="og:description" content="Daily and weekly car rentals in Clinton, MA. Call or text (726) 215-3491.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' fill='%230c1220'/%3E%3Crect x='.5' y='.5' width='35' height='35' fill='none' stroke='%23d2b46e'/%3E%3Cpath d='M12 9v18M12 18l11-9M15.5 15.5L24 27' stroke='%23f1ede3' stroke-width='1.6' fill='none'/%3E%3C/svg%3E">
+<title>XNova Rentals | Car rentals in Clinton, MA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f5f4f0; --surface:#fffefb; --raised:#ecebe5; --ink:#141a26; --muted:#5b6272; --line:#dedbd2;
+  --brass:#8a6a2a; --brass-line:#c4a764;
+  --night:#0c1220; --night-2:#131b2d; --night-ink:#f1ede3; --night-muted:#a3abbd; --night-line:#26304a; --gold:#d2b46e;
+  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1524; --surface:#151d30; --raised:#1b2439; --ink:#eeeae0; --muted:#9ea6b8; --line:#273049;
+  --brass:#d2b46e; --brass-line:#8f7740; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1524; --surface:#151d30; --raised:#1b2439; --ink:#eeeae0; --muted:#9ea6b8; --line:#273049;
+  --brass:#d2b46e; --brass-line:#8f7740; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:24px}
+@media (max-width:480px){.wrap{padding-inline:18px}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.06;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.7rem,6.4vw,4.8rem);letter-spacing:-.02em}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);letter-spacing:-.015em}
+h3{font-size:1.45rem;letter-spacing:-.005em}
+h1 em,h2 em{font-style:italic}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
+section{padding-block:104px}
+@media (max-width:700px){section{padding-block:72px}}
+.head{display:flex;flex-direction:column;gap:18px;max-width:46rem}
+.head p{color:var(--muted);font-size:1.08rem;max-width:38em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--gold);color:#16110a;font:600 .92rem/1 var(--sans);letter-spacing:.04em;padding:16px 26px;text-decoration:none;border:1px solid var(--gold);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.line{background:transparent;color:var(--night-ink);border-color:var(--night-line)}
+.btn.line:hover{border-color:var(--gold);color:var(--gold)}
+.btn.ink{background:var(--night);color:var(--night-ink);border-color:var(--night);width:100%}
+.btn.ink:hover{background:transparent;color:var(--ink);border-color:var(--ink)}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(12,18,32,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--night-line);color:var(--night-ink)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:16px}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo svg{width:36px;height:36px;flex:none}
+.logo b{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem;letter-spacing:.06em;text-transform:uppercase;line-height:1}
+.logo small{display:block;font-family:var(--mono);font-size:.6rem;letter-spacing:.24em;color:var(--night-muted);text-transform:uppercase;margin-top:5px}
+.navlinks{display:flex;gap:30px;font-size:.88rem;letter-spacing:.03em}
+.navlinks a{text-decoration:none;color:var(--night-muted);transition:color .2s;white-space:nowrap}
+.navlinks a:hover,.navlinks a[aria-current]{color:var(--night-ink)}
+.navlinks a[aria-current]{border-bottom:1px solid var(--gold);padding-bottom:2px}
+nav .btn{padding:12px 20px;font-size:.84rem}
+@media (max-width:900px){.navlinks .opt{display:none}}
+@media (max-width:560px){.navlinks{gap:16px}.logo small{display:none}}
+@media (max-width:440px){nav .btn{padding:11px 13px;font-size:.78rem}.logo b{font-size:1.05rem}}
+
+.hero{background:var(--night);color:var(--night-ink);padding-block:88px 104px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60rem 40rem at 85% 10%,rgba(210,180,110,.10),transparent 60%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{margin-block:22px 24px}
+.hero .lede{color:var(--night-muted);font-size:1.15rem;max-width:30em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.acro{margin-top:22px;font-family:var(--mono);font-size:.82rem;letter-spacing:.14em;color:var(--night-muted)}
+.acro b{color:var(--gold);font-weight:500;letter-spacing:.18em}
+.shot{margin:0;border:1px solid var(--night-line);padding:10px;background:var(--night-2);position:relative}
+.shot img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.shot figcaption{position:absolute;left:24px;bottom:24px;background:var(--night);border:1px solid var(--night-line);padding:12px 18px;line-height:1.2}
+.shot figcaption small{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--night-muted)}
+.shot figcaption b{font-family:var(--serif);font-weight:500;font-size:1.7rem;color:var(--night-ink)}
+.shot figcaption span{font-size:.85rem;color:var(--night-muted)}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:56px}}
+
+.fleet{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:56px}
+.car{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column}
+.car .ph{aspect-ratio:3/2;background:var(--raised);overflow:hidden}
+.car .ph img{width:100%;height:100%;display:block}
+.car .bd{padding:24px;display:flex;flex-direction:column;gap:16px;flex:1}
+.car .sub{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);display:block;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:.8rem;color:var(--muted);border:1px solid var(--line);padding:4px 10px}
+.price{display:flex;gap:32px;border-top:1px solid var(--line);padding-top:16px;margin-top:auto}
+.price b{font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1;display:block}
+.price span{font-size:.78rem;color:var(--muted)}
+.fine{font-size:.88rem;color:var(--muted);margin-top:28px;max-width:46em}
+
+.how{background:var(--surface);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
+.step{padding:34px 32px 8px 0;display:flex;flex-direction:column;gap:14px}
+.step+.step{padding-left:32px;border-left:1px solid var(--line)}
+.step .num{font-family:var(--mono);font-size:.74rem;letter-spacing:.2em;color:var(--brass)}
+.step p{color:var(--muted)}
+@media (max-width:860px){.steps{grid-template-columns:1fr}.step,.step+.step{padding:30px 0;border-left:0}.step+.step{border-top:1px solid var(--line)}}
+
+.need{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.need ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.need li{display:flex;flex-direction:column;gap:2px;padding:20px 0;border-bottom:1px solid var(--line)}
+.need li b{font-weight:600}
+.need li span{color:var(--muted)}
+@media (max-width:900px){.need{grid-template-columns:1fr;gap:40px}}
+
+.about{background:var(--surface);border-block:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.about figure{margin:0;border:1px solid var(--line);padding:10px;background:var(--bg)}
+.about figure img{display:block;width:100%}
+.about .txt{display:flex;flex-direction:column;gap:22px}
+.about .txt p{color:var(--muted);font-size:1.08rem}
+.sig b{display:block;font-family:var(--serif);font-weight:500;font-size:1.3rem}
+.sig span{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+@media (max-width:900px){.about .wrap{grid-template-columns:1fr;gap:44px}}
+
+.contact{background:var(--night);color:var(--night-ink)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.contact .eyebrow{color:var(--gold)}
+.contact h2{margin-block:20px 18px}
+.contact p{color:var(--night-muted);font-size:1.08rem;max-width:32em}
+.desk{border:1px solid var(--night-line);background:var(--night-2);padding:40px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.desk small{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--night-muted)}
+.phone{font-family:var(--serif);font-size:clamp(2rem,5vw,2.7rem);font-variant-numeric:tabular-nums;user-select:all;line-height:1.1;color:var(--night-ink)}
+.phone-digits{font-family:var(--mono);font-size:1rem;letter-spacing:.12em;color:var(--night-muted);user-select:all;margin-top:-8px;font-variant-numeric:tabular-nums}
+.desk .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.note{color:var(--night-muted);font-size:.85rem;min-height:1.2em}
+@media (max-width:900px){.contact .wrap{grid-template-columns:1fr;gap:44px}.desk{padding:30px}}
+
+footer.site{background:var(--night);color:var(--night-muted);border-top:1px solid var(--night-line);padding-block:40px;font-size:.84rem}
+footer.site .wrap{display:flex;flex-direction:column;gap:18px}
+footer.site .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+footer.site .top a{color:var(--gold);text-decoration:none}
+footer.site .fine{font-size:.78rem;max-width:64em;line-height:1.65;opacity:.85;color:var(--night-muted);margin:0}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Konbit Group home">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><rect x=".5" y=".5" width="35" height="35" fill="none" stroke="#d2b46e"/><path d="M12 9v18M12 18l11-9M15.5 15.5L24 27" stroke="#f1ede3" stroke-width="1.6" fill="none"/></svg>
+      <span><b>Konbit Group</b><small>Private Advisory · Clinton, MA</small></span>
+    </a>
+    <div class="navlinks">
+      <a class="opt" href="index.html#practice">Practice</a><a class="opt" href="index.html#work">Selected work</a><a class="opt" href="index.html#story">About</a><a href="index.html">Home</a><a href="rentals.html" aria-current="page">Car rentals</a>
+    </div>
+    <a class="btn" href="#contact">Reserve a car</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">XNova Rentals · Clinton, MA</span>
+      <h1>Reliable cars. <em>Clear</em> prices.</h1>
+      <p class="lede">Daily and weekly car rentals from a family-run team. Call or text with your dates and we get you on the road.</p>
+      <div class="cta">
+        <a class="btn" href="tel:+17262153491">Call (726) 215-3491</a>
+        <a class="btn line" href="sms:+17262153491">Text us</a>
+      </div>
+      <p class="acro">Easy to remember: <b>SAM-215-FIX1</b></p>
+    </div>
+    <figure class="shot">
+      <img src="rentals/glk350.jpg" alt="Black Mercedes-Benz GLK 350 available to rent">
+      <figcaption><small>Rentals from</small><b>$39</b> <span>per day</span></figcaption>
+    </figure>
+  </div>
+</header>
+
+<section id="fleet">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">The fleet</span>
+      <h2>Pick your <em>ride</em></h2>
+      <p>Everyday cars for errands, work, road trips and visiting family. Rates shown are averages; the final price depends on your dates.</p>
+    </div>
+    <div class="fleet">
+      <article class="car">
+        <div class="ph"><img src="rentals/corolla.jpg" alt="Toyota Corolla LE" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">Compact sedan</span><h3>Toyota Corolla LE</h3></div>
+          <div class="chips"><span>5 seats</span><span>2 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$39</b><span>per day</span></div><div><b>$229</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Toyota%20Corolla%20LE.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/accord.jpg" alt="Honda Accord Sport" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">Midsize sedan</span><h3>Honda Accord Sport</h3></div>
+          <div class="chips"><span>5 seats</span><span>3 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$49</b><span>per day</span></div><div><b>$289</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Honda%20Accord%20Sport.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/legacy.jpg" alt="Subaru Legacy" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">All-wheel-drive sedan</span><h3>Subaru Legacy</h3></div>
+          <div class="chips"><span>5 seats</span><span>3 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$47</b><span>per day</span></div><div><b>$279</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Subaru%20Legacy.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/cx5.jpg" alt="Mazda CX-5" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">Compact SUV</span><h3>Mazda CX-5</h3></div>
+          <div class="chips"><span>5 seats</span><span>4 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$69</b><span>per day</span></div><div><b>$419</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Mazda%20CX-5.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/compass.jpg" alt="Jeep Compass" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">Compact SUV</span><h3>Jeep Compass</h3></div>
+          <div class="chips"><span>5 seats</span><span>4 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$65</b><span>per day</span></div><div><b>$389</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Jeep%20Compass.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/crv.jpg" alt="Honda CR-V AWD" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">Compact SUV</span><h3>Honda CR-V AWD</h3></div>
+          <div class="chips"><span>5 seats</span><span>5 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$69</b><span>per day</span></div><div><b>$419</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Honda%20CR-V%20AWD.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/rav4.jpg" alt="Toyota RAV4" loading="lazy" style="object-fit:contain"></div>
+        <div class="bd">
+          <div><span class="sub">Compact SUV</span><h3>Toyota RAV4</h3></div>
+          <div class="chips"><span>5 seats</span><span>4 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$79</b><span>per day</span></div><div><b>$469</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Toyota%20RAV4.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/wrangler.jpg" alt="Jeep Wrangler" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">4x4 SUV</span><h3>Jeep Wrangler</h3></div>
+          <div class="chips"><span>5 seats</span><span>3 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$85</b><span>per day</span></div><div><b>$509</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Jeep%20Wrangler.">Text to reserve</a>
+        </div>
+      </article>
+      <article class="car">
+        <div class="ph"><img src="rentals/glk350.jpg" alt="Mercedes-Benz GLK 350" loading="lazy" style="object-fit:cover"></div>
+        <div class="bd">
+          <div><span class="sub">2012 · Luxury SUV</span><h3>Mercedes-Benz GLK 350</h3></div>
+          <div class="chips"><span>5 seats</span><span>3 bags</span><span>Automatic</span></div>
+          <div class="price"><div><b>$65</b><span>per day</span></div><div><b>$389</b><span>per week</span></div></div>
+          <a class="btn ink" href="sms:+17262153491?&body=Hi%2C%20I%27d%20like%20to%20rent%20the%20Mercedes-Benz%20GLK%20350.">Text to reserve</a>
+        </div>
+      </article>
+    </div>
+    <p class="fine">Daily and weekly rates are subject to dates and availability. Call or text (726) 215-3491 for an exact quote.</p>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps to the <em>road</em></h2>
+    </div>
+    <div class="steps"><div class="step"><span class="num">01</span><h3>Call or text</h3><p>Tell us your dates and which car you want. We confirm availability and the price.</p></div><div class="step"><span class="num">02</span><h3>Quick check-in</h3><p>Show your license and proof of insurance, sign the agreement, and place the deposit.</p></div><div class="step"><span class="num">03</span><h3>Drive</h3><p>Pick up the keys and go. Return the car on time with the same fuel level.</p></div></div>
+  </div>
+</section>
+
+<section id="need">
+  <div class="wrap need">
+    <div class="head">
+      <span class="eyebrow">Requirements</span>
+      <h2>What you need <em>to rent</em></h2>
+      <p>Have these ready and pickup moves quickly.</p>
+    </div>
+    <ul><li><b>Valid driver's license</b><span>Minimum age and driving-experience requirements apply. Ask when you call.</span></li><li><b>Proof of insurance</b><span>Your own auto policy, or ask us about coverage options.</span></li><li><b>Security deposit</b><span>Refundable, collected at pickup. The amount depends on the car.</span></li><li><b>Driving record</b><span>We review it before confirming a rental.</span></li><li><b>Fuel and mileage</b><span>Return the car with the same fuel level. Mileage terms are confirmed at booking.</span></li></ul>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <figure><img src="rentals/brothers.jpg" alt="Samuel Bruno and his brother David, co-owners of XNova Rentals"></figure>
+    <div class="txt">
+      <span class="eyebrow">About us</span>
+      <h2>A family business you can <em>reach directly</em></h2>
+      <p>XNova Rentals is run by brothers Samuel and David, based in Clinton, MA. We keep the fleet simple, the pricing clear, and every booking one call or text away.</p>
+      <p>When you contact us, you talk to one of the owners.</p>
+      <div class="sig"><b>Samuel Bruno and David</b><span>Co-owners · XNova Rentals</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Reserve</span>
+      <h2>Need a car <em>this week?</em></h2>
+      <p>Call or text with your dates and the car you want. Pickup is in Clinton, MA, and the exact location is shared when you book.</p>
+    </div>
+    <div class="desk">
+      <small>Direct line · call or text</small>
+      <div class="phone" aria-label="(726) 215-3491">SAM-215-FIX1</div><div class="phone-digits" id="phone">(726) 215-3491</div>
+      <div class="row">
+        <a class="btn" href="tel:+17262153491">Call now</a>
+        <a class="btn line" href="sms:+17262153491">Text us</a>
+        <button class="btn line" id="copy" type="button">Copy number</button>
+      </div>
+      <small class="note" id="copied" aria-live="polite"></small>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="top"><span>© 2026 XNova Rentals, a division of XNova LLC · Clinton, Massachusetts</span><a href="index.html">Konbit Group: private advisory →</a></div>
+    <p class="fine">Samuel Bruno, Founder. Rentals are subject to a signed rental agreement, a valid driver's license, proof of insurance and a security deposit. Rates and availability may change without notice.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click',function(){
+  var out=document.getElementById('copied');
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('phone'));var s=getSelection();s.removeAllRanges();s.addRange(r);out.textContent='Number selected. Copy it from here.';}
+  try{navigator.clipboard.writeText('(726) 215-3491').then(function(){out.textContent='Copied to clipboard.';},sel);}catch(e){sel();}
+});
+</script>
+
+</body>
+</html>
